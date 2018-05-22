@@ -33,6 +33,42 @@
 </head>
 <body>
 
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navToggler" aria-controls="navToggler"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navToggler">
+            <a class="navbar-brand" href="#">sMatoto</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Skills
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <!-- Preloader -->
     <div id="loading">
         <div id="loading-center">
@@ -48,9 +84,10 @@
         </div>
     </div>
 
-    <!-- Header / Navigation -->
     <header id="home">
-        <div class="navbar-fixed">
+    <!-- Header / Navigation -->
+
+        <!-- <div class="navbar-fixed">
             <nav>
             <div class="nav-wrapper black">
                 <i class="brand-logo yellow-text">sMatoto</i>
@@ -63,7 +100,7 @@
                 </ul>
             </div>
             </nav>
-        </div>
+        </div> -->
         <!--HEADER BACKGROUND-->
     <div class="header-background section"></div>
     </header>
@@ -133,7 +170,7 @@
             <div class="tab-content">
                 <div>
                     <!-- Capstone 1 -->
-                    <div class="col-md-4 col-sm-6 col-xs-12 grid inLeft ">
+                    <div class="col l4 m6 s12">
                      <div class="card z-depth-2">
                          <div class="card-image waves-effect waves-block waves-light">
                            <img class="activator" src="img/drifter.png">
@@ -151,7 +188,7 @@
                        </div>
                     </div>
                     <!-- Capstone 2 -->
-                    <div class="col-md-4 col-sm-6 col-xs-12 grid inRight">
+                    <div class="col l4 m6 s12">
                     	<div class="card z-depth-2">
                     	    <div class="card-image waves-effect waves-block waves-light">
                     	      <img class="activator" src="img/outlet.png">
@@ -196,18 +233,14 @@
             <h4 class="text-uppercase text-center"><i class="fas fa-user"></i> About Me</h4>
         </div>
 
-        <div id="timeline-education">
+        <div id="timeline-main">
 
             <!-- FIRST TIMELINE -->
             <div class="timeline-block">
-                <!-- DOT -->
                 <div class="timeline-dot"><i class="fas fa-user-graduate"></i></div>
-                <!-- TIMELINE CONTENT -->
                 <div class="card timeline-content">
                     <div class="card-content">
-                        <!-- TIMELINE TITLE -->
                         <h6 class="timeline-title">B.S. in Computer Engineering</h6>
-                        <!-- TIMELINE TITLE INFO -->
                         <div class="timeline-info">
                             <h6>
                                 <small>Polytechnic University of the Philippines</small>
@@ -216,7 +249,6 @@
                                 <small>June 2004 - Dec 2010</small>
                             </h6>
                         </div>
-                        <!-- TIMELINE PARAGRAPH -->
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua.
@@ -250,34 +282,35 @@
                         </p>
                     </div>
                 </div>
-            </div
+            </div>
 
-            <!-- THIRD TIMELINE -->
-	           <div class="timeline-block">
+            
+	           <div class="timeline-block">  
 	              <!-- DOT -->
-	              <div class="timeline-dot"><h6>T</h6></div>
-	              <!-- TIMELINE CONTENT -->
-	              <div class="card timeline-content">
-	                  <div class="card-content">
-	                      <!-- TIMELINE TITLE -->
-	                      <h6 class="timeline-title">Technical Support Representative II</h6>
-	                      <!-- TIMELINE TITLE INFO -->
-	                      <div class="timeline-info">
-	                          <h6>
-	                              <small>TELUS International Philippines</small>
-	                          </h6>
-	                          <h6>
-	                              <small>Oct 2015 - Feb 2016</small>
-	                          </h6>
-	                      </div>
-	                      <!-- TIMELINE PARAGRAPH -->
-	                      <p>
-	                          I started my journey with Google here, I got familiar with Google's email infrastructure and domain services. I resolved about 120+ technical issues related to Google's products and services.
-	                      </p>
+                    <div class="timeline-dot"><h6>T</h6>
+                    </div>
+                    <!-- TIMELINE CONTENT -->
+                    <div class="card timeline-content">
+                        <div class="card-content">
+                            <!-- TIMELINE TITLE -->
+                            <h6 class="timeline-title">Technical Support Representative II</h6>
+                            <!-- TIMELINE TITLE INFO -->
+                            <div class="timeline-info">
+                                <h6>
+                                    <small>TELUS International Philippines</small>
+                                </h6>
+                                <h6>
+                                    <small>Oct 2015 - Feb 2016</small>
+                                </h6>
+                            </div>
+                            <!-- TIMELINE PARAGRAPH -->
+                            <p>
+                                I started my journey with Google here, I got familiar with Google's email infrastructure and domain services. I resolved about 120+ technical issues related to Google's products and services.
+                            </p>
 
-	                  </div>
-	              </div>
-	            </div>
+                        </div>
+                    </div>
+                </div>
 
             <!-- FOURTH TIMELINE -->
             <div class="timeline-block">
@@ -361,16 +394,11 @@
                 </div>
             </div>
 
-            <!-- SEVENTH TIMELINE -->
             <div class="timeline-block">
-                <!-- DOT -->
                 <div class="timeline-dot"><i class="fas fa-user-graduate"></i></div>
-                <!-- TIMELINE CONTENT -->
                 <div class="card timeline-content">
                     <div class="card-content">
-                        <!-- TIMELINE TITLE -->
                         <h6 class="timeline-title">Trainee</h6>
-                        <!-- TIMELINE TITLE INFO -->
                         <div class="timeline-info">
                             <h6>
                                 <small>TUITT Coding Bootcamp</small>
@@ -379,7 +407,6 @@
                                 <small>Oct 2017 - May 2018</small>
                             </h6>
                         </div>
-                        <!-- TIMELINE PARAGRAPH -->
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua.
@@ -407,7 +434,7 @@
                             <div class="col-md-4 col-sm-4 col-xs-12">
                                 <!-- FIRST SKILL SECTION -->
                                 <div class="skills-title">
-                                    <h6 class="text-center">Web Development</h6>
+                                    <h6 class="text-center">Front End</h6>
                                 </div>
                                 <!-- FIRST SKILL BAR -->
                                 <div class="skillbar" data-percent="90%">
@@ -421,13 +448,25 @@
                                     <div class="skillbar-bar"></div>
                                     <div class="skill-bar-percent">90%</div>
                                 </div>
+                                <div class="skillbar" data-percent="90%">
+                                    <div class="skillbar-title"><span>Bootstrap 4</span>
+                                    </div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">90%</div>
+                                </div>
+                                <div class="skillbar" data-percent="90%">
+                                    <div class="skillbar-title"><span>Foundation Framework</span>
+                                    </div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">90%</div>
+                                </div>
                             </div>
 
 
                             <div class="col-md-4 col-sm-4 col-xs-12">
                                 <!-- SECOND SKILL SECTION -->
                                 <div class="skills-title">
-                                    <h6 class="text-center">Google Technologies</h6>
+                                    <h6 class="text-center">Back End</h6>
                                 </div>
                                 <!-- FIRST SKILL BAR -->
                                 <div class="skillbar" data-percent="80%">
@@ -616,6 +655,5 @@
     <script src="js/vendors/swiper.min.js"></script>
     <script src="js/vendors/jquery.magnific-popup.min.js"></script>
     <script src="js/script.js"></script>
-
 </body>
 </html>

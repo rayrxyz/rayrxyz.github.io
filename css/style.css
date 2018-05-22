@@ -49,14 +49,15 @@ html, body{
 		width:750px;
 	}
 
-	.brand-logo {
-			margin-left: 1em;
-	}
+
 }
 
 @media (min-width:992px){
 	.container{
 		width:970px;
+	}
+	.brand-logo {
+			margin-left: 1em;
 	}
 }
 
@@ -687,11 +688,11 @@ body.scale-effect .btn-holder .btn-play {
 #about .about-btn .btn:hover{background:#05985a;
 }
 
-#timeline-education {
+#timeline-main {
 	position:relative;
 }
 
-#timeline-education:before {
+#timeline-main:before {
 	content:'';
 	position:absolute;
 	top:0;
@@ -707,7 +708,9 @@ body.scale-effect .btn-holder .btn-play {
 	position:relative;
 }
 .timeline-block::after{
-	clear:both;content:"";display:table;
+	clear:both;
+	content:"";
+	display:table;
 }
 .timeline-block:first-child{
 	margin-top:0;
@@ -720,7 +723,6 @@ body.scale-effect .btn-holder .btn-play {
 }
 
 .timeline-block .card-content p {
-
 	margin-top:13px;
 	text-align:left;
 }
@@ -728,11 +730,9 @@ body.scale-effect .btn-holder .btn-play {
 .timeline-block .card-content .modal-dot{
 	outline:0;
 	font-size:20px;
-
 }
 .timeline-block .card-content .modal-dot:hover, .timeline-block .card-content .modal-dot:focus{
 	color:#12579b;
-
 }
 .timeline-block .timeline-dot{
 	background:#06A763;
@@ -811,19 +811,12 @@ body.scale-effect .btn-holder .btn-play {
 	}
 }
 
+/* Line */
 @media only screen and (min-width:768px){ 
-	#timeline-education::before {
+	#timeline-main::before {
 		left:50%;
 		margin-left:-2px;
 		height:77.1%;
-		opacity:0.4;
-		background:#06A763;
-	}
-
-	#timeline-experience::before {
-		left:50%;
-		margin-left:-2px;
-		height:69.1%;
 		opacity:0.4;
 		background:#06A763;
 	}
@@ -1254,7 +1247,7 @@ hr{
 
 /* Qwert */
 
-i.brand-logo {
+a.navbar-brand {
 	font-family: 'Yellowtail';
 	font-size: 2.7em;
 }
