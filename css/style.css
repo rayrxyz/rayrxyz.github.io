@@ -505,9 +505,6 @@ body.scale-effect .btn-holder .btn-play {
 }
 #v-card-holder #v-card .infos .profile-list p.title {
 	font-size:1.15em;
-
-	font-family: 'Roboto';
-
 }
 #v-card-holder #v-card .infos .profile-list .title .fa {
 	padding-left:2px;
@@ -520,7 +517,6 @@ body.scale-effect .btn-holder .btn-play {
 	font-weight:400;
 	line-height:20px;
 	color:#fff;
-
 }
 #v-card-holder #v-card .links {
 	max-width:500px;
@@ -1246,7 +1242,6 @@ hr{
 }
 
 /* Qwert */
-
 a.navbar-brand {
 	font-family: 'Yellowtail';
 	font-size: 2.7em;
@@ -1259,4 +1254,8 @@ a.navbar-brand {
 
 #nav-mobile {
 	margin-right: 1em;
+}
+
+#navToggler a.navbar-brand {
+	color: #cfff43;
 }
