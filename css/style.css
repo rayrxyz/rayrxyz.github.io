@@ -1259,3 +1259,7 @@ a.navbar-brand {
 #navToggler a.navbar-brand {
 	color: #cfff43;
 }
+
+#return-top {
+	display: none;
+}

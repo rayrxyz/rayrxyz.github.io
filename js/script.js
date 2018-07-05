@@ -35,20 +35,20 @@
 			);
 		}
 
-		function initScrollToTop(){
-			$(window).on('scroll',function(){
-				if($(this).scrollTop()>=50){
-					$('div#scrollup').addClass('animated flipInY').fadeIn(200);
-				}
-				else{
-					$('div#scrollup').fadeOut(200);
-				}
-			});
+		// function initScrollToTop(){
+		// 	$(window).on('scroll',function(){
+		// 		if($(this).scrollTop()>=50){
+		// 			$('div#scrollup').addClass('animated flipInY').fadeIn(200);
+		// 		}
+		// 		else{
+		// 			$('div#scrollup').fadeOut(200);
+		// 		}
+		// 	});
 
-			$('div#scrollup').on('click',function(){
-				$("html,body").animate({scrollTop:0},600);return false;
-			});
-		}
+		// 	$('div#scrollup').on('click',function(){
+		// 		$("html,body").animate({scrollTop:0},600);return false;
+		// 	});
+		// }
 
 		function initPortfolio(){
 			var all='#a,#b,#c';
@@ -224,5 +224,16 @@ jQuery(window).on('load',function(){
 })(jQuery);
 
 
+// Script for FAB fade-in or out
+$(window).scroll(function(){ 
+	if ($(this).scrollTop() > 100)
+		$('#return-top').fadeIn(); 
+	else 
+		$('#return-top').fadeOut(); 
+}); 
 
+// FAB script to return to the top of the page
+$('#return-top').click(function(){ 
+	$("html, body").animate({ scrollTop: 0 }, 600);
+});
 
