@@ -168,10 +168,10 @@
     container = _resolveContainer(config)
     elements = _getRevealElements(target, container)
 
-    if (!elements.length) {
-      console.log('ScrollReveal: reveal on "' + target + '" failed, no elements found.')
-      return sr
-    }
+    // if (!elements.length) {
+    //   console.log('ScrollReveal: reveal on "' + target + '" failed, no elements found.')
+    //   return sr
+    // }
 
     // Prepare a new sequence if an interval is passed.
     if (interval && typeof interval === 'number') {

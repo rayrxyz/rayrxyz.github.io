@@ -35,21 +35,6 @@
 			);
 		}
 
-		// function initScrollToTop(){
-		// 	$(window).on('scroll',function(){
-		// 		if($(this).scrollTop()>=50){
-		// 			$('div#scrollup').addClass('animated flipInY').fadeIn(200);
-		// 		}
-		// 		else{
-		// 			$('div#scrollup').fadeOut(200);
-		// 		}
-		// 	});
-
-		// 	$('div#scrollup').on('click',function(){
-		// 		$("html,body").animate({scrollTop:0},600);return false;
-		// 	});
-		// }
-
 		function initPortfolio(){
 			var all='#a,#b,#c';
 			var afterFirst='#b,#c';
@@ -236,4 +221,31 @@ $(window).scroll(function(){
 $('#return-top').click(function(){ 
 	$("html, body").animate({ scrollTop: 0 }, 600);
 });
+
+$(document).ready(function () {
+	AOS.init({
+	  duration: 1200,
+	});
+
+	$('.customer-logos').slick({
+	  slidesToShow: 6,
+	  slidesToScroll: 1,
+	  autoplay: true,
+	  autoplaySpeed: 1000,
+	  arrows: false,
+	  dots: false,
+	  pauseOnHover: false,
+	  responsive: [{
+		breakpoint: 768,
+		settings: {
+		  slidesToShow: 4
+		}
+	  }, {
+		breakpoint: 520,
+		settings: {
+		  slidesToShow: 3
+		}
+	  }]
+	});
+  });
 
