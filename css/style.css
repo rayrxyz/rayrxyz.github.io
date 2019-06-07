@@ -990,58 +990,58 @@ body.scale-effect .btn-holder .btn-play {
 	animation-fill-mode:both;
 }
 
-#interest .card{
+#badges .card{
 	padding:0;
 
 }
-#interest .card .card-content{
+#badges .card .card-content{
 	border-bottom:1px solid rgba(160, 160, 160, 0.2);
 
 }
-#interest .card .row.no-gutters{
+#badges .card .row.no-gutters{
 	margin-right:0;
 	margin-left:0;
 
 }
-#interest .card .row.no-gutters > [class^="col-"], 
-#interest .card .row.no-gutters > [class*=" col-"]{
+#badges .card .row.no-gutters > [class^="col-"], 
+#badges .card .row.no-gutters > [class*=" col-"]{
 	padding-right:0;
 	padding-left:0;
 
 }
-#interest .card .box{
+#badges .card .box{
 	height:105px;
 
 }
-#interest .card .box .interest-icon{
+#badges .card .box .interest-icon{
 	display:block;
 	color:#fff;
 	background:#06A763;
 	height:105px;
 
 }
-#interest .card .box .interest-icon i{
+#badges .card .box .interest-icon i{
 	font-size:2.2em;
 	margin-top:29px;
 
 }
-#interest .card .box .interest-icon span{
+#badges .card .box .interest-icon span{
 	display:block;
 
 }
-#interest .card .box .interest-icon-even{
+#badges .card .box .interest-icon-even{
 	display:block;
 	color:#06A763;
 	height:105px;
 	margin-right:-1px;
 
 }
-#interest .card .box .interest-icon-even i{
+#badges .card .box .interest-icon-even i{
 	font-size:2.2em;
 	margin-top:29px;
 
 }
-#interest .card .box .interest-icon-even span{
+#badges .card .box .interest-icon-even span{
 	display:block;
 
 }
