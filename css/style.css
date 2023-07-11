@@ -312,7 +312,7 @@ body.scale-effect .btn-holder .btn-play {
 }
 #loading .box-holder .load-box {
 	display:inline-block;
-	width:30px;
+	width:100%;
 	height:30px;
 	position:relative;
 	border:4px solid #fff;
@@ -326,8 +326,8 @@ body.scale-effect .btn-holder .btn-play {
 	display:inline-block;
 	width:100%;
 	background-color:#1976D2;
-	animation:loader-inner 2s infinite ease-in;
-	-webkit-animation:loader-inner 2s infinite ease-in;
+	animation:loader-inner 3s infinite ease-in;
+	-webkit-animation:loader-inner 3s infinite ease-in;
 }
 @-webkit-keyframes loader {
 	0% {
