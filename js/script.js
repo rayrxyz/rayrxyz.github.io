@@ -20,6 +20,12 @@
 				$('body').toggleClass('body-push-toright');
 				$('nav#theMenu').toggleClass('menu-open');
 			});
+			
+			// $('.image-link').magnificPopup({
+			// 	type: 'image'
+			// 	// Add other options as needed
+			// });
+			  
 		}
 
 		function initSmoothScroll(){
@@ -254,4 +260,100 @@ document.addEventListener('DOMContentLoaded', function() {
 	var elems = document.querySelectorAll('.modal');
 	var instances = M.Modal.init(elems);
   });
+
+// Swiper JS
+function initializeSwiper(popupId) {
+	var galleryModal = document.querySelector(popupId);
+	var swiper = new Swiper(popupId + ' .swiper-container', {
+	  // Enable pagination
+	  pagination: {
+		el: popupId + ' .swiper-pagination',
+		clickable: true,
+	  },
+	  // Enable navigation arrows
+	  navigation: {
+		nextEl: popupId + ' .swiper-button-next',
+		prevEl: popupId + ' .swiper-button-prev',
+	  },
+	  // Enable swipe gestures
+	  allowTouchMove: true,
+	  // Add Swiper instance to gallery modal element
+	  on: {
+		init: function () {
+		  galleryModal.swiper = this;
+		},
+	  },
+	});
+
+	// Open the gallery modal on link click
+	var galleryLinks = document.querySelectorAll(popupId + ' .gallery-link');
+	galleryLinks.forEach(function (link) {
+	  link.addEventListener('click', function (e) {
+		e.preventDefault();
+		M.Modal.getInstance(galleryModal).open();
+		// Update Swiper instance on modal open
+		galleryModal.swiper.update();
+	  });
+	});
+
+	// Close the gallery modal on close button click
+	var closeModalButton = galleryModal.querySelector('.modal-close');
+	closeModalButton.addEventListener('click', function () {
+	  M.Modal.getInstance(galleryModal).close();
+	});
+
+	// Automatic image change every 5 seconds
+	var autoPlayInterval;
+
+	function startAutoPlay() {
+	  autoPlayInterval = setInterval(function () {
+		galleryModal.swiper.slideNext();
+	  }, 5000);
+	}
+
+	function stopAutoPlay() {
+	  clearInterval(autoPlayInterval);
+	}
+
+	galleryModal.addEventListener('mouseenter', stopAutoPlay);
+	galleryModal.addEventListener('mouseleave', startAutoPlay);
+
+	startAutoPlay();
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+	initializeSwiper('#popup1');
+	initializeSwiper('#popup3');
+});
+  
+  
+/* Close Popup Function */  
+function closePopup(popupId) {
+    var popup = document.getElementById(popupId);
+    var overlay = popup.querySelector('.gallery-modal-overlay');
+
+    popup.style.display = 'none';
+    overlay.style.display = 'none';
+}
+
+document.getElementById('closePopup1').addEventListener('click', function() {
+    closePopup('popup1');
+});
+
+document.getElementById('closePopup2').addEventListener('click', function() {
+    closePopup('popup2');
+});
+
+document.getElementById('closePopup3').addEventListener('click', function() {
+    closePopup('popup3');
+});
+
+document.getElementById('closePopup4').addEventListener('click', function() {
+    closePopup('popup4');
+});
+
+  
+  
+  
+
 
